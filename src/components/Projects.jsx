@@ -36,7 +36,7 @@ const Projects = () => {
                 <LazyLoadImage
                   src={images.src}
                   alt={images.name}
-                  className=' rounded-xl lg:object-cover object-contain cursor-pointer w-auto h-80  transform hover:scale-105 transition-transform duration-300'
+                  className=' rounded-xl object-cover cursor-pointer w-auto h-full  transform hover:scale-105 transition-transform duration-300'
                 />
 
 
