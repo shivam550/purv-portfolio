@@ -1,52 +1,76 @@
-import React, { useState } from 'react'
-import { allImages } from '../index'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { motion } from 'framer-motion'
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 
 const Projects = () => {
-  const [clickbtn , setClickBtn] = useState('')
 
-  
-  const handleClick = (buttonName) =>{
-  setClickBtn(buttonName)
 
-  }
-  console.log(clickbtn);
+  return (
 
-  return ( 
     <>
-      <div className='min-h-screen w-full text-center bg-black'>
-        <div className='flex justify-center items-center gap-6 pt-8'>
-          <button className='px-8 py-3 bg-white text-black' onClick={()=>{handleClick('graphics')}} >Graphics</button>
-          <button className='px-8 py-3 bg-white text-black' onClick={()=>{handleClick('games')}} >Games</button>
+      <div className='container  flex justify-center lg:flex-row flex-col w-full items-center grid-col-1'>
+        <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+          <p className='text-white text-xl '>Graphics</p>
 
+          <Link to='/graphics' className="cursor-pointer transition-all 
+            bg-gray-700 text-white px-6 py-2 rounded-lg
+            border-green-400
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
+            Explore
+          </Link>
         </div>
-        <div className='overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:px-24 py-20'>
-          {
+        <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+          <p className='text-white text-xl '>Games</p>
 
-            allImages
-            .filter((f)=>f.category.toLowerCase().includes(clickbtn))
-            .map((images) => (
-
-              <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-               className='shadow-lg' key={images.id}>
-                <LazyLoadImage
-                  src={images.src}
-                  alt={images.name}
-                  className=' rounded-xl object-cover cursor-pointer w-auto h-full  transform hover:scale-105 transition-transform duration-300'
-                />
-
-
-
-              </motion.div>
-
-            ))
-
-          }
+          <Link to='/graphics' className="cursor-pointer transition-all 
+            bg-gray-700 text-white px-6 py-2 rounded-lg
+            border-green-400
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
+            Explore
+          </Link>
         </div>
+
+        <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+          <p className='text-white text-xl '>Render</p>
+
+          <Link to='/render' className="cursor-pointer transition-all 
+            bg-gray-700 text-white px-6 py-2 rounded-lg
+            border-green-400
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
+            Explore
+          </Link>
+        </div>
+
+        <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+          <p className='text-white text-xl '>Interative art</p>
+
+          <Link to='/graphics' className="cursor-pointer transition-all 
+            bg-gray-700 text-white px-6 py-2 rounded-lg
+            border-green-400
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
+            Explore
+          </Link>
+        </div>
+       
+        <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+          <p className='text-white text-xl '>Animation</p>
+
+          <Link to='/animation' className="cursor-pointer transition-all 
+            bg-gray-700 text-white px-6 py-2 rounded-lg
+            border-green-400
+            border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
+            Explore
+          </Link>
+        </div>
+        
+        
+
       </div>
     </>
   )

@@ -9,9 +9,11 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;    
- scroll-behavior: smooth;
+ font-family: "Poppins", serif ;
 }
-
+html,body{
+    scroll-behavior: smooth;
+ }
 /* :root{
     --heading-font: "Montserrat", serif;
     --secondary-font: "Poppins", serif; */

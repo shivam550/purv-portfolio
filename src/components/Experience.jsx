@@ -7,36 +7,43 @@ import "react-vertical-timeline-component/style.min.css";
 const Experience = () => {
   const timelineData = [
     {
-      title: "Junior Designer",
-      date: "2019",
-      description: "Started my career, mastering foundational tools and techniques.",
+      title: "Graphic Designer",
+      date: "August 2024 - present",
+      description: "Manage and execute social media strategies for clients, including static, motion, and 3D content, to boost brand visibility and engagement.",
       icon: "🎨",
     },
     {
-      title: "Award Winner",
-      date: "2020",
-      description: "Received my first major award for outstanding graphic design.",
-      icon: "🏆",
+      title: "Designer",
+      date: "March 2024 - August 2024",
+      description: "Handle all social media work and marketing strategies for static, motion, and 3D.",
+      icon: "🖥️",
     },
     {
-      title: "3D Specialist",
-      date: "2022",
-      description: "Specialized in 3D design, creating immersive visuals for games.",
+      title: "3D Graphic Designer",
+      date: "June 2023 - Jan 2024",
+      description: "Developed high-quality design concepts and visuals. Provided design services by making 3D packshots and model renders for P&G stores across Asia, Europe, and North America.",
       icon: "📐",
     },
     {
-      title: "Senior Designer",
-      date: "2023",
-      description: "Promoted to senior role, leading creative teams and mentoring.",
-      icon: "🌟",
+      title: "3D Designer (Intern)",
+      date: "June 2022 - Aug 2022",
+      description: "Assisted head designer in Interior Design projects, creating mood boards, checking products, and delivering 3D models and renders for furniture and site layouts.",
+      icon: "🏗️",
+    },
+    {
+      title: "Graphic Designer",
+      date: "April 2019 - May 2021",
+      description: "Worked on visual identity and branding, print design, and digital design, with a focus on illustration.",
+      icon: "🎨",
     },
   ];
+  
 
 
 
   return (
     <div className="py-12 bg-black">
-      <h2 className="text-3xl font-bold text-center mb-8">My Journey</h2>
+      <h2 className="text-3xl text-white underline underline-offset-8 font-bold text-center mb-8">My Journey</h2>
       <VerticalTimeline>
         {timelineData.map((item, index) => (
           <motion.div

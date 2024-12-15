@@ -1,40 +1,25 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './App.css';
 
-// import { Route, Routes, useLocation } from 'react-router-dom'
-import './App.css'
-// import About from './components/About'
-// import Contact from './components/Contact'
-// import Experience from './components/Experience'
-// import Hero from './components/Hero'
-// import Navbar from './components/Navbar'
-// import Projects from './components/Projects'
-import LandingPages from './pages/LandingPages'
+import Graphics from './pages/Graphics';
+import Render from './pages/Render';
+import LandingPages from './pages/LandingPages';
+import Renderdetail from './components/Renderdetail';
+import Walkthrough from './pages/Walkthrough';
 
 function App() {
-
   return (
-    <>
-      {/* <Navbar />
-      <Routes location={location} key={location.pathname}>
-        <Route index element={<Hero />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/project' element={<Projects />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes> */}
-
-      <LandingPages />
-
-
-
-
-
-
-
-
-
-
-    </>
-  )
+    <Router >
+      <Routes >
+        <Route path='/' element={<LandingPages />} />
+        <Route path='/graphics' element={<Graphics />} />
+        <Route path='/render' element={<Render />} />
+        <Route path='/render/:category' element={<Renderdetail />} />
+        <Route path='/animation' element={<Walkthrough />} />
+      </Routes>
+    </Router>
+ 
+  );
 }
 
-export default App
+export default App;
