@@ -24,7 +24,7 @@ const Projects = () => {
         <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-white text-xl '>Games</p>
 
-          <Link to='/graphics' className="cursor-pointer transition-all 
+          <Link to='/games' className="cursor-pointer transition-all 
             bg-gray-700 text-white px-6 py-2 rounded-lg
             border-green-400
             border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
@@ -46,7 +46,7 @@ const Projects = () => {
         </div>
 
         <div className='bg-gray-700 h-[10rem] w-[12rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
-          <p className='text-white text-xl '>Interative art</p>
+          <p className='text-white text-xl '>Interactive art</p>
 
           <Link to='/graphics' className="cursor-pointer transition-all 
             bg-gray-700 text-white px-6 py-2 rounded-lg

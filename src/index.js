@@ -120,6 +120,31 @@ import farm4 from "./assets/verticle farming/farming4.png";
 import farm5 from "./assets/verticle farming/farming5.png";
 
 
+//drift-guru 
+import drift_1 from "./assets/drift_1.png";
+import drift_2 from "./assets/drift_2.png";
+import drift_3 from "./assets/drift_3.png";
+import drift_4 from "./assets/drift_4.png";
+
+
+//neon-hunter
+import neon_1 from "./assets/neon_1.png";
+import neon_2 from "./assets/neon_2.png";
+import neon_3 from "./assets/neon_3.png";
+import neon_4 from "./assets/neon_4.png";
+
+//machinas
+import machina_1 from "./assets/machina_1.png";
+import machina_2 from "./assets/machina_2.png";
+import machina_3 from "./assets/machina_3.png";
+
+//sprint
+
+import sprint_1 from "./assets/sprint_1.png";
+import sprint_2 from "./assets/sprint_2.png";
+import sprint_3 from "./assets/sprint_3.png";
+
+
 // Create an array of all images with id and category
 const allImages = [
   { id: 1, name: "graphics_one", src: graphics_one, category: "graphics" },
@@ -337,6 +362,13 @@ export const animationWalkthrough = [
 ];
 
 
+export const allgames = [
+  { id:1 , src:drift_1 , name : "Drift Guru" , category : 'games' , path : '/drift-guru'},
+  { id:1 , src:machina_1 , name : "Machina's Fall" , category : 'games' , path: '/machinas'},
+  { id:1 , src:neon_1 , name : "Neon Hunter" , category : 'games', path: '/neon'},
+  { id:1 , src:sprint_1 , name : "Sprint" , category : 'games', path: '/sprint'},
+  { id:1 , src:drift_1 , name : "Safety" , category : 'games', path: '/safety'}
+]
 
 
 
@@ -441,5 +473,19 @@ export {
    farm2,
    farm3,
    farm4,
-   farm5
+   farm5,
+   drift_1,
+   drift_2,
+   drift_3,
+   drift_4,
+   neon_1,
+   neon_2,
+   neon_3,
+   neon_4,
+   machina_1,
+   machina_2,
+   machina_3,
+   sprint_1,
+   sprint_2,
+   sprint_3
 };
