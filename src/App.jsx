@@ -12,6 +12,7 @@ import MachinasFall from './pages/MachineFall';
 import SafetyGame from './pages/Safety';
 import SprintGame from './pages/Sprint';
 import Games from './pages/Games';
+import FlipCoin from './pages/Flipcoin';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/machinas' element={<MachinasFall />} />
         <Route path='/safety' element={<SafetyGame />} />
         <Route path='/sprint' element={<SprintGame />} />
+        <Route path='/flipcoin' element={<FlipCoin />} />
       </Routes>
     </Router>
  

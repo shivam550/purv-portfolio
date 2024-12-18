@@ -7,31 +7,31 @@ import "react-vertical-timeline-component/style.min.css";
 const Experience = () => {
   const timelineData = [
     {
-      title: "Graphic Designer",
+      title: "Graphic Designer at Altois - Mumbai",
       date: "August 2024 - present",
       description: "Manage and execute social media strategies for clients, including static, motion, and 3D content, to boost brand visibility and engagement.",
       icon: "🎨",
     },
     {
-      title: "Designer",
+      title: "Designer at Realatte - Mumbai",
       date: "March 2024 - August 2024",
       description: "Handle all social media work and marketing strategies for static, motion, and 3D.",
       icon: "🖥️",
     },
     {
-      title: "3D Graphic Designer",
+      title: "3D Graphic Designer at Accenture Mumbai",
       date: "June 2023 - Jan 2024",
       description: "Developed high-quality design concepts and visuals. Provided design services by making 3D packshots and model renders for P&G stores across Asia, Europe, and North America.",
       icon: "📐",
     },
     {
-      title: "3D Designer (Intern)",
+      title: "3D Designer (Intern) at desigM - Mumbai",
       date: "June 2022 - Aug 2022",
       description: "Assisted head designer in Interior Design projects, creating mood boards, checking products, and delivering 3D models and renders for furniture and site layouts.",
       icon: "🏗️",
     },
     {
-      title: "Graphic Designer",
+      title: "Graphic Designer at Lilys - Jaipur",
       date: "April 2019 - May 2021",
       description: "Worked on visual identity and branding, print design, and digital design, with a focus on illustration.",
       icon: "🎨",
@@ -43,7 +43,7 @@ const Experience = () => {
 
   return (
     <div className="py-12 bg-black">
-      <h2 className="text-3xl text-white underline underline-offset-8 font-bold text-center mb-8">My Journey</h2>
+      <h2 className="text-3xl text-white underline underline-offset-8 font-bold text-center mb-8">Journey So Far</h2>
       <VerticalTimeline>
         {timelineData.map((item, index) => (
           <motion.div
@@ -54,8 +54,8 @@ const Experience = () => {
           >
             <VerticalTimelineElement
               className="m-3 vertical-timeline-element--work"
-              date={<p className='text-white font-bold text-xl'>{item.date}</p>}
-              icon={<div className="text-xl flex justify-center items-center my-4">{item.icon}</div>}
+              date={<p className='font-bold text-xl sm:text-white text-black'>{item.date}</p>}
+              icon={<div className="text-xl flex justify-center items-center mt-2 mb-4 lg:my-4">{item.icon}</div>}
               position={index % 2 === 0 ? "left" : "right"}
               contentStyle={{ background: "#e3fcec", color: "#313131" }}
               contentArrowStyle={{ borderRight: "7px solid #e3fcec" }}

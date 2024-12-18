@@ -109,7 +109,7 @@ const LandingPages = () => {
       <section id="experience">
         <Experience />
       </section>
-      <section id="projects">
+      <section id="projects" className="my-12">
         <Projects />
       </section>
       <section id="contact">

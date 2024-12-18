@@ -145,6 +145,14 @@ import sprint_2 from "./assets/sprint_2.png";
 import sprint_3 from "./assets/sprint_3.png";
 
 
+//safety 
+import safety from "./assets/safety.png";
+
+//FlipCoin 
+import flip_1 from "./assets/flip-1.png";
+import flip_2 from "./assets/flip-2.png";
+import flip_3 from "./assets/flip-3.png";
+
 // Create an array of all images with id and category
 const allImages = [
   { id: 1, name: "graphics_one", src: graphics_one, category: "graphics" },
@@ -364,10 +372,11 @@ export const animationWalkthrough = [
 
 export const allgames = [
   { id:1 , src:drift_1 , name : "Drift Guru" , category : 'games' , path : '/drift-guru'},
-  { id:1 , src:machina_1 , name : "Machina's Fall" , category : 'games' , path: '/machinas'},
-  { id:1 , src:neon_1 , name : "Neon Hunter" , category : 'games', path: '/neon'},
-  { id:1 , src:sprint_1 , name : "Sprint" , category : 'games', path: '/sprint'},
-  { id:1 , src:drift_1 , name : "Safety" , category : 'games', path: '/safety'}
+  { id:2 , src:machina_1 , name : "Machina's Fall" , category : 'games' , path: '/machinas'},
+  { id:3 , src:neon_1 , name : "Neon Hunter" , category : 'games', path: '/neon'},
+  { id:4 , src:sprint_1 , name : "Sprint" , category : 'games', path: '/sprint'},
+  { id:5 , src:safety , name : "Safety" , category : 'games', path: '/safety'},
+  { id:6 , src:flip_1 , name : "Flip Coin" , category : 'games', path: '/flipcoin'},
 ]
 
 
@@ -487,5 +496,9 @@ export {
    machina_3,
    sprint_1,
    sprint_2,
-   sprint_3
+   sprint_3,
+   safety,
+   flip_1,
+   flip_2,
+   flip_3
 };
