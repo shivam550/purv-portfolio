@@ -13,7 +13,7 @@ const Projects = () => {
         <h2 className='text-4xl text-emerald-400 font-semibold underline underline-offset-8'>Projects</h2>
       </div>
       <div className='container  flex justify-center lg:flex-row flex-col w-full items-center grid-col-1'>
-        <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+        <div className='bg-black h-[18rem] w-[30rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-emerald-400 text-xl '>Graphics</p>
 
           <Link to='/graphics' className="cursor-pointer transition-all 
@@ -24,7 +24,7 @@ const Projects = () => {
             Explore
           </Link>
         </div>
-        <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+        <div className='bg-black h-[18rem] w-[30rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-emerald-400 text-xl '>Games</p>
 
           <Link to='/games' className="cursor-pointer transition-all 
@@ -36,7 +36,7 @@ const Projects = () => {
           </Link>
         </div>
 
-        <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+        <div className='bg-black h-[18rem] w-[30rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-emerald-400 text-xl '>Render</p>
 
           <Link to='/render' className="cursor-pointer transition-all 
@@ -48,7 +48,7 @@ const Projects = () => {
           </Link>
         </div>
 
-        <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+        {/* <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-emerald-400 text-xl '>Interactive art</p>
 
           <Link to='/graphics' className="cursor-pointer transition-all 
@@ -58,9 +58,9 @@ const Projects = () => {
             active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-green-300 shadow-green-300 active:shadow-none">
             Explore
           </Link>
-        </div>
+        </div> */}
        
-        <div className='bg-black h-[14rem] w-[14rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
+        <div className='bg-black h-[18rem] w-[30rem] flex flex-col rounded-md justify-center items-center  space-y-2 overflow-hidden shadow-xl max-w-sm text-center m-6 '>
           <p className='text-emerald-400 text-xl '>Animation</p>
 
           <Link to='/animation' className="cursor-pointer transition-all 
