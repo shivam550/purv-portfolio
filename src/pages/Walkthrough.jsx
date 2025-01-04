@@ -3,8 +3,8 @@ import { animationWalkthrough } from ".."; // Ensure the correct path to the fil
 
 const Walkthrough = () => {
   return (
-    <div className="lg:my-16 my-8 px-4 sm:px-6 lg:px-24">
-      <h2 className="text-3xl text-black underline underline-offset-8 font-bold text-center mb-8">Animation Walk Through</h2>
+    <div className="lg:py-16 py-8 px-4 sm:px-6 lg:px-24 bg-gray-900">
+      <h2 className="text-3xl text-yellow-500  underline underline-offset-8 font-bold text-center mb-8">Animation Walk Through</h2>
       
       <div className="flex flex-wrap justify-center items-center gap-8">
         {animationWalkthrough.map((video) => (
@@ -20,7 +20,7 @@ const Walkthrough = () => {
               allowFullScreen
               className="rounded-lg"
             ></iframe>
-            <p className="text-xl bg-black text-white p-4 font-semibold text-center w-full mt-4">{video.name}</p>
+            <p className="text-xl bg-black text-yellow-500 shadow-lg p-4 font-semibold text-center w-full mt-4">{video.name}</p>
           </div>
         ))}
       </div>

@@ -42,7 +42,7 @@ const Experience = () => {
 
 
   return (
-    <div className="py-12 bg-black">
+    <div className="py-12 bg-[#000000e6]">
       <h2 className="text-3xl text-white underline underline-offset-8 font-bold text-center mb-8">Journey So Far</h2>
       <VerticalTimeline>
         {timelineData.map((item, index) => (

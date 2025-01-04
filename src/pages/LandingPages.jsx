@@ -63,7 +63,7 @@ const LandingPages = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="absolute top-16 right-4 bg-gray-800 rounded-lg shadow-lg flex flex-col gap-4 p-4 text-white w-40 z-10">
+        <div className="absolute top-16 right-4 bg-gray-900 rounded-lg shadow-lg flex flex-col gap-4 p-4 text-white w-40 z-10">
           <a
             href="#hero"
             className="text-emerald-500 hover:underline transition"
