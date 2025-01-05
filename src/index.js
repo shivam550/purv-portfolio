@@ -434,6 +434,12 @@ export const animationWalkthrough = [
     name: "Neglected bot",
     category: "Walkthrough",
     videoId: "wTzHJyFgu_Q"
+  },
+  {
+    id: 9,
+    name: "Temple weapon",
+    category: "Walkthrough",
+    videoId: "_YMyBWGh_7I"
   }
 ];
 
