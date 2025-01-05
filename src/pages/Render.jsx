@@ -4,20 +4,18 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Render = () => {
-  // Variants for container animation
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        staggerChildren: 0.2, // Delay between each child animation
+        staggerChildren: 0.2, 
         duration: 0.5,
       },
     },
   };
 
-  // Variants for individual card animation
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
@@ -47,22 +45,25 @@ const Render = () => {
           {renderThumbnils.map((thumbnil) => (
             <motion.div
               key={thumbnil.id}
-              className="relative group rounded-lg overflow-hidden shadow-lg transition-all hover:scale-105 hover:shadow-2xl"
+              className="relative group rounded-lg overflow-hidden shadow-lg bg-gray-800 transition-all hover:scale-105 hover:shadow-2xl"
               variants={cardVariants}
             >
               <Link to={`/render/${thumbnil.category}`} className="block">
                 <motion.img
                   src={thumbnil.src}
                   alt={thumbnil.name}
-                  className="w-full h-64 object-cover transition-all group-hover:opacity-80"
+                  className="w-full h-64 object-cover transition-all group-hover:opacity-90"
                   loading="lazy"
-                  whileHover={{ scale: 1.05, opacity: 0.9 }} // Framer hover animation
-                  transition={{ duration: 0.3 }}
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-center p-4">
-                  <p className="text-yellow-500 text-md font-semibold">{thumbnil.name}</p>
-                </div>
               </Link>
+              <div className="p-4">
+                <p className="text-sm text-gray-300 leading-relaxed mb-2">
+                  {thumbnil.description}
+                </p>
+                <p className="text-yellow-500 text-md font-bold text-center uppercase">
+                  {thumbnil.name}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

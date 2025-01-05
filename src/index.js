@@ -14,6 +14,7 @@ import INSIGNIA from "./assets/INSIGNIA.jpg";
 import JAI_TO_MUMBAI from "./assets/JAI - TO - MUMBAI.png";
 import OUTSIDE from "./assets/OUTSIDE.png";
 import VOICE_OF_PUNJAB from "./assets/VOICE_OF_PUNJAB.jpg";
+import Roboghost from "./assets/Roboghost.jpg";
 
 // areana all images
 import arena_one from "./assets/arena/arena_01.jpg";
@@ -170,21 +171,82 @@ const allImages = [
   { id: 13, name: "JAI_TO_MUMBAI", src: JAI_TO_MUMBAI, category: "graphics" },
   { id: 14, name: "OUTSIDE", src: OUTSIDE, category: "graphics" },
   { id: 15, name: "VOICE_OF_PUNJAB", src: VOICE_OF_PUNJAB, category: "graphics" },
+  { id: 16, name: "Roboghost", src: Roboghost, category: "graphics" },
 
 ];
  
 export const renderThumbnils = [
-  {id: 1, name: "ESPORTS ARENA", src: arena_one ,category: "renders_arena"},
-  {id: 2, name: "ART GALLERY", src: art_gallery_01, category: "renders_art_gallery" },
-  {id: 3, name: "COLA DRINKS", src: coladeinks1 , category: "renders_cocacola"},
-  {id: 4, name: "COZY HOME", src: cosy1 ,  category: "renders_cosyhomes"},
-  {id: 5, name: "Dock Park", src: Dock1 , category: "renders_dock"},
-  {id: 6, name: "THE HALL", src: hall1 , category: "renders_hails"},
-  {id: 7, name: "THE LOCKERS", src: locker1 , category: "renders_lockerRooms"},
-  {id: 8, name: "THE MAZE", src: maze1 ,category: "renders_mazes" },
-  {id: 9, name: "TAJ PARK", src: Taj1 ,  category: "renders_park"},
-  {id: 10, name: "VERTICLE FARMING", src: farm1, category: "renders_farming"},
-]
+  { 
+    id: 1, 
+    name: "ESPORTS ARENA", 
+    src: arena_one, 
+    category: "renders_arena", 
+    description: "Perfect battleground for champions. Experience the energy of competition like never before!" 
+  },
+  { 
+    id: 2, 
+    name: "ART GALLERY", 
+    src: art_gallery_01, 
+    category: "renders_art_gallery", 
+    description: "A modern art gallery blending geometry and light, where contemporary exhibits meet innovative architectural design. Step into a realm where every corner is a masterpiece." 
+  },
+  { 
+    id: 3, 
+    name: "COLA DRINKS", 
+    src: coladeinks1, 
+    category: "renders_cocacola", 
+    description: "Coca-Cola wonderland, where bold red walls and checkered floors bring timeless branding to life. Experience a playful mix of nostalgia and modernity in every corner." 
+  },
+  { 
+    id: 4, 
+    name: "COZY HOME", 
+    src: cosy1, 
+    category: "renders_cosyhomes", 
+    description: "Step into Cosy Home—a serene Unreal Engine escape where warm interiors meet the magic of dancing aurora lights." 
+  },
+  { 
+    id: 5, 
+    name: "Dock Park", 
+    src: Dock1, 
+    category: "renders_dock", 
+    description: "Ride the edge at this dynamic dockside skate park—where urban vibes, bold graffiti, and thrilling ramps come alive under the open sky." 
+  },
+  { 
+    id: 6, 
+    name: "THE HALL", 
+    src: hall1, 
+    category: "renders_hails", 
+    description: "Modern elegance and cozy comfort, where clean lines and soft lighting create the perfect interior retreat. A space designed to inspire and relax." 
+  },
+  { 
+    id: 7, 
+    name: "THE LOCKERS", 
+    src: locker1, 
+    category: "renders_lockerRooms", 
+    description: "A locker room like no other—crafted with the essence of PlayStation, blending style and innovation seamlessly." 
+  },
+  { 
+    id: 8, 
+    name: "THE MAZE", 
+    src: maze1, 
+    category: "renders_mazes", 
+    description: "Immerse yourself in a conceptual model that fuses bold pink hues, sleek geometry, and reflective surfaces. A striking visual representation of modern design in progress." 
+  },
+  { 
+    id: 9, 
+    name: "TAJ PARK", 
+    src: Taj1, 
+    category: "renders_park", 
+    description: "A one of a kind skateboard park where the majestic Taj Mahal meets thrilling ramps and loops. Skate amidst iconic architecture and endless adventure!" 
+  },
+  { 
+    id: 10, 
+    name: "VERTICLE FARMING", 
+    src: farm1, 
+    category: "renders_farming", 
+    description: "The future of agriculture with this vertical farming marvel—where cutting-edge design meets sustainable innovation, illuminated by a vibrant pink glow. Grow smarter, live greener!" 
+  }
+];
 
 
 
@@ -366,6 +428,12 @@ export const animationWalkthrough = [
     name: "The Aura",
     category: "Walkthrough",
     videoId: "43XP-n1VlHw"
+  },
+  {
+    id: 8,
+    name: "Neglected bot",
+    category: "Walkthrough",
+    videoId: "wTzHJyFgu_Q"
   }
 ];
 

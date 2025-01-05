@@ -15,7 +15,7 @@ const Renderdetail = () => {
 
 
     return (
-        <div className='bg-gray-900 flex flex-wrap items-center justify-center px-8 py-8'>
+        <div className='bg-gray-900 w-full lg:h-screen h-auto flex flex-wrap items-center justify-center px-8 py-8'>
             {
                 resultImages.map((images, index) => (
                     <div key={index} className="h-[20rem] w-[22rem] overflow-hidden rounded m-4">

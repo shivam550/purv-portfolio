@@ -12,7 +12,7 @@ const Hero = () => {
         loop
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="hero-bg.mp4" type="video/mp4" />
+        <source src="bg-hero-all.mov" />
       </video>
 
       {/* Overlay */}
@@ -24,7 +24,7 @@ const Hero = () => {
           Hello, I'm Purv Prabhakar
         </h1>
         <div className="flex justify-center items-center">
-          <p className="sm:text-4xl text-xl text-white">Passionate about</p>
+          <p className="sm:text-4xl text-md text-white">Passionate about</p>
           <TypeAnimation
             sequence={[
               "Game Designing",
@@ -35,7 +35,7 @@ const Hero = () => {
               1000,
             ]}
             speed={50}
-            className="sm:text-4xl text-xl text-emerald-400 ml-2"
+            className="sm:text-4xl text-md text-emerald-400 ml-2"
             repeat={Infinity}
           />
         </div>

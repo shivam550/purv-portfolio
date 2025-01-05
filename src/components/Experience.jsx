@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
+import "../App.css";
 
 
 const Experience = () => {
@@ -55,7 +56,7 @@ const Experience = () => {
             <VerticalTimelineElement
               className="m-3 vertical-timeline-element--work"
               date={<p className='font-bold text-xl sm:text-white text-black'>{item.date}</p>}
-              icon={<div className="text-xl flex justify-center items-center mt-2 mb-4 lg:my-4">{item.icon}</div>}
+              icon={<div className="text-xl flex justify-center items-center  mt-2 mb-4 lg:my-4">{item.icon}</div>}
               position={index % 2 === 0 ? "left" : "right"}
               contentStyle={{ background: "#e3fcec", color: "#313131" }}
               contentArrowStyle={{ borderRight: "7px solid #e3fcec" }}
