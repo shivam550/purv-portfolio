@@ -171,7 +171,6 @@ const allImages = [
   { id: 13, name: "JAI_TO_MUMBAI", src: JAI_TO_MUMBAI, category: "graphics" },
   { id: 14, name: "OUTSIDE", src: OUTSIDE, category: "graphics" },
   { id: 15, name: "VOICE_OF_PUNJAB", src: VOICE_OF_PUNJAB, category: "graphics" },
-  { id: 16, name: "Roboghost", src: Roboghost, category: "graphics" },
 
 ];
  
@@ -245,6 +244,13 @@ export const renderThumbnils = [
     src: farm1, 
     category: "renders_farming", 
     description: "The future of agriculture with this vertical farming marvel—where cutting-edge design meets sustainable innovation, illuminated by a vibrant pink glow. Grow smarter, live greener!" 
+  },
+  { 
+    id: 11, 
+    name: "ROBO GHOST", 
+    src: Roboghost, 
+    category: "none", 
+    description: "This is Robo Ghost, a robotic character brought to life step by step. It starts as a simple sketch, gradually gaining shape, texture, and detail, until it becomes a fully realized 3D model. The final result is a sleek, futuristic design that feels both dynamic and lifelike." 
   }
 ];
 

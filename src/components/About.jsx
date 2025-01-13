@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { FaBehanceSquare, FaLinkedin } from 'react-icons/fa'
 import { IoCall } from 'react-icons/io5'
 import { MdEmail } from 'react-icons/md'
+import { FaSquareInstagram } from 'react-icons/fa6'
 
 
 
@@ -55,6 +56,11 @@ const About = () => {
             <div>
               <a href="mailto:Purvprabhakar23@gmail.com">
                 <MdEmail className='text-4xl cursor-pointer m-1' />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/designaut_/">
+              <FaSquareInstagram className='text-4xl cursor-pointer m-1' />
               </a>
             </div>
           </div>

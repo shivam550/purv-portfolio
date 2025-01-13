@@ -16,7 +16,7 @@ const LandingPages = () => {
       {/* Responsive Navbar */}
       <nav className="w-full bg-black bg-opacity-90  flex justify-between items-center px-8 py-6">
       <div className="logo">
-        <h5 className="text-xl font-bold text-emerald-500">Purv</h5>
+        <h5 className="text-xl font-bold text-emerald-500">Designaut</h5>
       </div>
 
       {/* Desktop Menu */}
